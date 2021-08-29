@@ -1,0 +1,61 @@
+@import "variable";
+
+* {
+	font-family: $font;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: $color1;
+}
+li {
+	list-style: none;
+}
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+.section {
+	margin: 120px 0;
+	&:nth-child(4) {
+		margin: 120px 0 220px;
+	}
+	&:nth-child(5) {
+		margin: 120px 0 0;
+		padding-bottom: 120px;
+	}
+	&_ttl_box {
+		position: relative;
+		padding-bottom: 37px;
+		margin-bottom: 50px;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 40px;
+			height: 1px;
+			background: $color1;
+			left: 0;
+			bottom: 0;
+		}
+		h2 {
+			font-size: 2.25rem;
+			font-weight: normal;
+			letter-spacing: .5rem;
+			margin-bottom: 5px;
+		}
+	}
+}
+.logo {
+	width: 100px;
+	height: 26px;
+	line-height: 1;
+	margin-right: 60px;
+	a {
+		display: block;
+	}
+}
